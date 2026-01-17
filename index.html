@@ -5,72 +5,51 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PLY_STUDIO | Mobilier CNC | Chavannes-Renens</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@300;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    body { 
-      font-family: 'Inter', sans-serif; 
-      scroll-behavior: smooth; 
-      -webkit-font-smoothing: antialiased;
-      font-weight: 300; /* Force la finesse par défaut */
-      overflow-x: hidden; /* Empêche le scroll horizontal dû à la parallaxe */
-    }
-    .mono { font-family: 'JetBrains Mono', monospace; font-weight: 300; }
-    
-    /* Suppression stricte de l'italique et des graisses lourdes */
-    * { font-style: normal !important; }
+    body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
+    .mono { font-family: 'JetBrains Mono', monospace; }
+    * { font-style: normal !important; } /* Suppression stricte de l'italique */
 
     /* Animation d'apparition au défilement */
-    .fade-in { opacity: 0; transform: translateY(15px); transition: all 1s cubic-bezier(0.22, 1, 0.36, 1); }
+    .fade-in { opacity: 0; transform: translateY(20px); transition: all 0.8s ease-out; }
     .fade-in.visible { opacity: 1; transform: translateY(0); }
-
-    /* Titres raffinés */
-    h1, h2, h3 { font-weight: 500; letter-spacing: -0.02em; }
-
-    /* Style de la section d'accueil pour la parallaxe */
-    .parallax-bg {
-      background-image: url('https://images.unsplash.com/photo-1594026112284-02bb6f3352fe?auto=format&fit=crop&q=80&w=1920&h=1080'); /* Image de fond par défaut */
-      background-attachment: fixed; /* L'effet de parallaxe */
-      background-position: center bottom; /* Position de départ */
-      background-repeat: no-repeat;
-      background-size: cover;
-      transition: background-position 0.1s ease-out; /* Douceur du mouvement */
-    }
   </style>
 </head>
 <body class="bg-white text-zinc-900">
 
-  <header class="fixed top-0 w-full z-50 py-8 px-10 flex justify-between items-center bg-white/80 backdrop-blur-sm border-b border-zinc-100">
-    <div class="font-medium text-xl tracking-tight uppercase">Ply_Studio</div>
-    <nav class="hidden md:flex gap-12 text-[10px] font-medium uppercase tracking-[0.3em]">
-      <a href="#collection" class="hover:opacity-40 transition">Catalogue</a>
-      <a href="#atelier" class="hover:opacity-40 transition">L'Atelier</a>
-      <a href="#contact" class="hover:opacity-40 transition">Contact</a>
+  <header class="fixed top-0 w-full z-50 mix-blend-difference py-8 px-10 flex justify-between items-center text-white">
+    <div class="font-black text-2xl tracking-tighter uppercase">Ply_Studio</div>
+    <nav class="hidden md:flex gap-12 text-[10px] font-bold uppercase tracking-[0.3em]">
+      <a href="#collection" class="hover:opacity-50 transition">Catalogue</a>
+      <a href="#atelier" class="hover:opacity-50 transition">Atelier</a>
+      <a href="#contact" class="hover:opacity-50 transition">Contact</a>
     </nav>
   </header>
 
   <main>
-    <section id="hero-parallax" class="h-screen flex flex-col justify-center px-10 md:px-20 relative parallax-bg">
-      <div class="max-w-4xl bg-white/70 backdrop-blur-sm p-8 rounded-lg">
-        <div class="mono text-[10px] text-zinc-400 mb-8 uppercase tracking-[0.4em] font-medium">// Chavannes-Renens / 1022 CH</div>
-        <h1 class="text-6xl md:text-9xl mb-12 leading-[0.9] tracking-tighter">
-          Systèmes<br>Modulaires.
+    <section class="h-screen flex flex-col justify-center px-10 md:px-20 relative bg-[#f7f7f5]">
+      <div class="max-w-4xl">
+        <div class="mono text-[11px] text-blue-600 mb-6 font-bold uppercase tracking-widest">// Usinage Precision CNC / Chavannes-Renens</div>
+        <h1 class="text-7xl md:text-[12rem] font-black uppercase leading-[0.85] tracking-tighter mb-10">
+          Pure<br>Plywood.
         </h1>
-        <p class="text-lg md:text-xl max-w-lg leading-relaxed text-zinc-600 uppercase tracking-tight font-light">
-          Mobilier en bouleau multiplis conçu par fraisage numérique. L'équilibre entre précision machine et finesse artisanale.
+        <p class="text-xl md:text-2xl font-medium max-w-xl leading-relaxed uppercase tracking-tight">
+          La rencontre entre l'ingénierie numérique et le design essentiel. Conçu et fabriqué localement.
         </p>
       </div>
-      <div class="absolute bottom-10 right-10 mono text-[9px] text-zinc-800 tracking-widest uppercase bg-white/70 backdrop-blur-sm px-4 py-2 rounded-lg">
-        Explore Project_01
+      <div class="absolute bottom-10 right-10 mono text-[10px] text-zinc-400">
+        SCROLL TO EXPLORE_
       </div>
     </section>
 
-    <section id="collection" class="py-40 px-10 bg-white">
-      <div class="mb-32 flex flex-col md:flex-row justify-between items-baseline border-b border-zinc-100 pb-10">
-        <h2 class="text-4xl uppercase tracking-tighter">Collection_2026</h2>
-        <span class="mono text-[9px] text-zinc-400 uppercase tracking-widest">Neuf pièces en série limitée</span>
+    <section id="collection" class="py-32 px-10 bg-white">
+      <div class="mb-32 flex flex-col md:flex-row justify-between items-baseline">
+        <h2 class="text-5xl font-black uppercase tracking-tighter">Collection_2026</h2>
+        <span class="mono text-xs text-zinc-400 font-bold uppercase">09 Pièces sélectionnées</span>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-32 gap-x-16">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-32 gap-x-20">
         
         <script>
           const products = [
@@ -87,15 +66,15 @@
 
           document.write(products.map(p => `
             <div class="fade-in group cursor-pointer">
-              <div class="aspect-[4/5] overflow-hidden bg-[#f9f9f9] mb-10 transition-all duration-700 group-hover:bg-[#f0f0f0]">
-                <img src="${p.img}" class="w-full h-full object-cover mix-blend-multiply opacity-90 group-hover:opacity-100 transition-all duration-700">
+              <div class="aspect-[4/5] overflow-hidden bg-[#f7f7f5] mb-8 transition-all duration-500 group-hover:shadow-2xl">
+                <img src="${p.img}" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700">
               </div>
-              <div class="flex justify-between items-baseline px-2">
+              <div class="flex justify-between items-baseline">
                 <div>
-                  <h3 class="uppercase text-sm tracking-tight mb-1">${p.name}</h3>
-                  <p class="mono text-[9px] text-zinc-400 uppercase tracking-widest font-light">Structure_Bouleau_18mm</p>
+                  <h3 class="font-black uppercase text-lg tracking-tighter">${p.name}</h3>
+                  <p class="mono text-[10px] text-zinc-400 uppercase mt-1 tracking-widest">Birch_Ply_18mm</p>
                 </div>
-                <span class="text-sm font-light">${p.price} CHF</span>
+                <span class="font-bold text-lg">${p.price} CHF</span>
               </div>
             </div>
           `).join(''));
@@ -104,72 +83,60 @@
       </div>
     </section>
 
-    <section id="atelier" class="py-40 px-10 border-t border-zinc-100 bg-white">
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
-        <div>
-          <h2 class="text-4xl uppercase tracking-tighter mb-10">L'Atelier_</h2>
-          <p class="text-xl font-light uppercase leading-relaxed text-zinc-500 mb-16">
-            De la programmation numérique à la finition manuelle, chaque pièce est réalisée à Chavannes-Renens avec une attention portée au moindre détail.
+    <section id="atelier" class="py-32 px-10 bg-[#0a0a0a] text-white overflow-hidden">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-20">
+        <div class="reveal">
+          <h2 class="text-6xl font-black uppercase tracking-tighter mb-10">L'Atelier_</h2>
+          <p class="text-2xl font-light uppercase leading-snug opacity-80 max-w-lg mb-20">
+            Nous transformons le bois brut en systèmes de mobilier intelligents par fraisage numérique de haute précision.
           </p>
-          <div class="mono text-[9px] space-y-10 uppercase tracking-[0.4em]">
+          <div class="mono text-[11px] space-y-8 uppercase tracking-widest">
             <div>
-              <span class="text-zinc-300 block mb-3 font-medium">// LOCALISATION</span>
-              <p class="text-zinc-600">Av. de la Gare 48, 1022 Chavannes-Renens, Suisse</p>
+              <span class="text-blue-600 block mb-2 font-black">LOCALISATION</span>
+              <p>Av. de la Gare 48, 1022 Chavannes-Renens, Suisse</p>
             </div>
             <div>
-              <span class="text-zinc-300 block mb-3 font-medium">// DISPONIBILITÉ</span>
-              <p class="text-zinc-600">Usinage sur demande / Collection permanente</p>
+              <span class="text-blue-600 block mb-2 font-black">SERVICES</span>
+              <p>Usinage CNC / Design sur mesure / Prototypage</p>
             </div>
           </div>
         </div>
-        <div class="aspect-square bg-[#fafafa] p-10">
-           <img src="https://images.unsplash.com/photo-1611269154421-4e27233ac5c7?auto=format&fit=crop&q=80&w=1200" class="w-full h-full object-cover opacity-80 mix-blend-multiply">
+        <div class="relative h-[600px] bg-zinc-900 overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1611269154421-4e27233ac5c7?auto=format&fit=crop&q=80&w=1200" class="w-full h-full object-cover opacity-50">
         </div>
       </div>
     </section>
 
-    <section id="contact" class="py-40 px-10 bg-[#fafafa] flex justify-center">
-      <div class="w-full max-w-2xl">
-        <h2 class="text-4xl uppercase tracking-tighter mb-20 text-center">Contact_</h2>
-        <form class="space-y-12">
-          <input type="text" placeholder="NOM_IDENTITÉ" class="w-full bg-transparent border-b border-zinc-200 py-4 focus:outline-none focus:border-zinc-400 uppercase text-[11px] tracking-widest font-light">
-          <input type="email" placeholder="EMAIL_ADRESSE" class="w-full bg-transparent border-b border-zinc-200 py-4 focus:outline-none focus:border-zinc-400 uppercase text-[11px] tracking-widest font-light">
-          <textarea rows="3" placeholder="MESSAGE_DÉTAILS" class="w-full bg-transparent border-b border-zinc-200 py-4 focus:outline-none focus:border-zinc-400 uppercase text-[11px] tracking-widest font-light"></textarea>
-          <button class="w-full bg-zinc-900 text-white py-6 text-[10px] uppercase font-medium tracking-[0.5em] hover:bg-black transition-all">Envoyer la demande</button>
+    <section id="contact" class="py-32 px-10 bg-white flex justify-center">
+      <div class="w-full max-w-3xl">
+        <h2 class="text-5xl font-black uppercase tracking-tighter mb-20 text-center">Commencer_un_Projet</h2>
+        <form class="space-y-16">
+          <input type="text" placeholder="NOM_COMPLET" class="w-full border-b border-zinc-200 py-4 focus:outline-none focus:border-black uppercase font-bold text-sm tracking-widest">
+          <input type="email" placeholder="EMAIL_CONTACT" class="w-full border-b border-zinc-200 py-4 focus:outline-none focus:border-black uppercase font-bold text-sm tracking-widest">
+          <textarea rows="4" placeholder="VOTRE_MESSAGE" class="w-full border-b border-zinc-200 py-4 focus:outline-none focus:border-black uppercase font-bold text-sm tracking-widest"></textarea>
+          <button class="bg-black text-white px-12 py-6 font-black uppercase text-xs tracking-[0.4em] hover:bg-blue-600 transition-all w-full">Envoyer la demande</button>
         </form>
       </div>
     </section>
   </main>
 
-  <footer class="p-10 flex flex-col md:flex-row justify-between items-center mono text-[9px] uppercase tracking-widest text-zinc-400 border-t border-zinc-100">
+  <footer class="p-10 border-t border-zinc-100 flex justify-between items-center mono text-[10px] uppercase font-bold text-zinc-400">
     <div>© 2026 PLY_STUDIO // CHAVANNES-RENENS</div>
-    <div class="flex gap-10 mt-6 md:mt-0">
-      <a href="#" class="hover:text-zinc-900 transition">Instagram</a>
-      <a href="#" class="hover:text-zinc-900 transition">Shop_Policy</a>
+    <div class="hidden md:flex gap-10">
+      <a href="#" class="hover:text-black transition">Instagram</a>
+      <a href="#" class="hover:text-black transition">Shop_Policy</a>
     </div>
   </footer>
 
   <script>
-    // Script pour l'animation d'apparition au scroll (reste le même)
+    // Petit script pour l'animation au scroll
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-        }
+        if (entry.isIntersecting) entry.target.classList.add('visible');
       });
     }, { threshold: 0.1 });
 
     document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
-
-    // Script pour l'effet de parallaxe
-    const heroSection = document.getElementById('hero-parallax');
-    window.addEventListener('scroll', () => {
-      const scrollY = window.scrollY;
-      // Ajustez ce facteur pour contrôler la vitesse de la parallaxe
-      // Un chiffre plus petit donnera un mouvement plus lent
-      const parallaxSpeed = 0.2; 
-      heroSection.style.backgroundPositionY = `${-scrollY * parallaxSpeed}px`;
-    });
   </script>
 
 </body>
