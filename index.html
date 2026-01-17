@@ -16,7 +16,6 @@
     }
     .animate-reveal { animation: fadeInUp 0.8s ease-out forwards; }
     
-    /* Effet de transition pour les images */
     .img-hover { transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1); }
     .group:hover .img-hover { transform: scale(1.05); }
   </style>
@@ -41,7 +40,7 @@
         <h1 class="text-6xl md:text-8xl font-black uppercase leading-[0.9] tracking-tighter mb-8">
           Flatpack <br> <span class="text-stone-200">Engineering</span>
         </h1>
-        <p class="text-xl max-w-sm leading-tight mb-12 font-medium">
+        <p class="text-xl max-w-sm leading-tight mb-12 font-medium uppercase tracking-tight">
           Mobilier modulaire en bouleau. Conçu à Chavannes-Renens. Assemblage par friction sans vis ni colle.
         </p>
         <a href="#collection" class="inline-block bg-black text-white px-10 py-5 text-sm uppercase font-black hover:bg-stone-800 transition-all">
@@ -57,19 +56,19 @@
     <section id="collection" class="bg-white">
       <div class="px-8 py-12 flex justify-between items-end border-b border-black bg-[#fdfdfb]">
         <h2 class="text-4xl font-black uppercase tracking-tighter">Collection_2026</h2>
-        <span class="mono text-[10px] text-stone-400 uppercase tracking-widest">Série limitée // Bouleau Multiplis</span>
+        <span class="mono text-[10px] text-stone-400 uppercase tracking-widest">09 Modèles // Bouleau Multiplis</span>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 border-b border-black">
         
-        <div class="group border-r border-black border-b cursor-pointer overflow-hidden" onclick="location.href='#contact'">
+        <div class="group border-r border-black border-b cursor-pointer overflow-hidden" onclick="location.href='produit.html'">
           <div class="aspect-square flex items-center justify-center relative bg-stone-50">
             <img src="https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover img-hover">
             <div class="absolute top-4 left-4 mono text-[9px] bg-white border border-black px-2 py-1 uppercase opacity-0 group-hover:opacity-100 transition-opacity">Consulter</div>
           </div>
           <div class="p-6 border-t border-black flex justify-between items-start group-hover:bg-black group-hover:text-white transition-all">
-            <div><h3 class="font-bold uppercase text-xs">Tabouret_A</h3><p class="text-[10px] mono mt-1 opacity-60">18MM / NATUREL</p></div>
-            <span class="font-bold italic">145 CHF</span>
+            <div><h3 class="font-bold uppercase text-xs">Tabouret_Pli_01</h3><p class="text-[10px] mono mt-1 opacity-60 uppercase">18MM / NATUREL</p></div>
+            <span class="font-bold">145 CHF</span>
           </div>
         </div>
 
@@ -78,35 +77,95 @@
             <img src="https://images.unsplash.com/photo-1533090161767-e6ffed986c88?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover img-hover">
           </div>
           <div class="p-6 border-t border-black flex justify-between items-start group-hover:bg-black group-hover:text-white transition-all">
-            <div><h3 class="font-bold uppercase text-xs">Table_Basse_X</h3><p class="text-[10px] mono mt-1 opacity-60">24MM / NOIR</p></div>
-            <span class="font-bold italic">320 CHF</span>
+            <div><h3 class="font-bold uppercase text-xs">Table_Basse_X</h3><p class="text-[10px] mono mt-1 opacity-60 uppercase">24MM / NOIR</p></div>
+            <span class="font-bold">320 CHF</span>
           </div>
         </div>
 
-        <div class="group border-black border-b cursor-pointer overflow-hidden">
+        <div class="group border-r border-black border-b lg:border-r-0 cursor-pointer overflow-hidden">
           <div class="aspect-square flex items-center justify-center relative bg-stone-50">
             <img src="https://images.unsplash.com/photo-1594026112284-02bb6f3352fe?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover img-hover">
           </div>
           <div class="p-6 border-t border-black flex justify-between items-start group-hover:bg-black group-hover:text-white transition-all">
-            <div><h3 class="font-bold uppercase text-xs">Étagère_Unit</h3><p class="text-[10px] mono mt-1 opacity-60">12MM / BLANC</p></div>
-            <span class="font-bold italic">85 CHF</span>
+            <div><h3 class="font-bold uppercase text-xs">Étagère_Unit_A</h3><p class="text-[10px] mono mt-1 opacity-60 uppercase">12MM / BLANC</p></div>
+            <span class="font-bold">85 CHF</span>
           </div>
         </div>
 
+        <div class="group border-r border-black border-b cursor-pointer overflow-hidden">
+          <div class="aspect-square flex items-center justify-center relative bg-white">
+            <img src="https://images.unsplash.com/photo-1581428982868-e410dd047a90?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover img-hover">
+          </div>
+          <div class="p-6 border-t border-black flex justify-between items-start group-hover:bg-black group-hover:text-white transition-all">
+            <div><h3 class="font-bold uppercase text-xs">Banc_Mod_04</h3><p class="text-[10px] mono mt-1 opacity-60 uppercase">18MM / NATUREL</p></div>
+            <span class="font-bold">210 CHF</span>
+          </div>
         </div>
+
+        <div class="group border-r border-black border-b cursor-pointer overflow-hidden">
+          <div class="aspect-square flex items-center justify-center relative bg-stone-50">
+            <img src="https://images.unsplash.com/photo-1592078615290-033ee584e267?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover img-hover">
+          </div>
+          <div class="p-6 border-t border-black flex justify-between items-start group-hover:bg-black group-hover:text-white transition-all">
+            <div><h3 class="font-bold uppercase text-xs">Chaise_Ply_K</h3><p class="text-[10px] mono mt-1 opacity-60 uppercase">18MM / NOIR</p></div>
+            <span class="font-bold">195 CHF</span>
+          </div>
+        </div>
+
+        <div class="group border-b border-black lg:border-r-0 cursor-pointer overflow-hidden">
+          <div class="aspect-square flex items-center justify-center relative bg-white">
+            <img src="https://images.unsplash.com/photo-1538688543411-857e4e87790b?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover img-hover">
+          </div>
+          <div class="p-6 border-t border-black flex justify-between items-start group-hover:bg-black group-hover:text-white transition-all">
+            <div><h3 class="font-bold uppercase text-xs">Table_Diner_06</h3><p class="text-[10px] mono mt-1 opacity-60 uppercase">24MM / NATUREL</p></div>
+            <span class="font-bold">580 CHF</span>
+          </div>
+        </div>
+
+        <div class="group border-r border-black border-b md:border-b-0 cursor-pointer overflow-hidden">
+          <div class="aspect-square flex items-center justify-center relative bg-stone-50">
+            <img src="https://images.unsplash.com/photo-1503602642458-232111445657?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover img-hover">
+          </div>
+          <div class="p-6 border-t border-black flex justify-between items-start group-hover:bg-black group-hover:text-white transition-all">
+            <div><h3 class="font-bold uppercase text-xs">Bureau_Work_01</h3><p class="text-[10px] mono mt-1 opacity-60 uppercase">18MM / NATUREL</p></div>
+            <span class="font-bold">450 CHF</span>
+          </div>
+        </div>
+
+        <div class="group border-r border-black border-b md:border-b-0 cursor-pointer overflow-hidden">
+          <div class="aspect-square flex items-center justify-center relative bg-white">
+            <img src="https://images.unsplash.com/photo-1544030109-47bbd524990f?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover img-hover">
+          </div>
+          <div class="p-6 border-t border-black flex justify-between items-start group-hover:bg-black group-hover:text-white transition-all">
+            <div><h3 class="font-bold uppercase text-xs">Porte_Revues_P</h3><p class="text-[10px] mono mt-1 opacity-60 uppercase">12MM / NOIR</p></div>
+            <span class="font-bold">65 CHF</span>
+          </div>
+        </div>
+
+        <div class="group border-b-0 cursor-pointer overflow-hidden">
+          <div class="aspect-square flex items-center justify-center relative bg-stone-50">
+            <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover img-hover">
+          </div>
+          <div class="p-6 border-t border-black flex justify-between items-start group-hover:bg-black group-hover:text-white transition-all">
+            <div><h3 class="font-bold uppercase text-xs">Console_Entry</h3><p class="text-[10px] mono mt-1 opacity-60 uppercase">18MM / NATUREL</p></div>
+            <span class="font-bold">290 CHF</span>
+          </div>
+        </div>
+
+      </div>
     </section>
 
     <section id="atelier" class="grid grid-cols-1 md:grid-cols-2 border-b border-black">
       <div class="p-8 md:p-16 border-r border-black bg-stone-900 text-white">
         <h2 class="text-4xl font-black uppercase tracking-tighter mb-8">L'Atelier</h2>
-        <p class="text-lg opacity-70 mb-8 max-w-sm">Chaque pièce est usinée numériquement puis finie à la main dans notre espace de Chavannes-Renens.</p>
+        <p class="text-lg opacity-70 mb-8 max-w-sm uppercase tracking-tighter">Chaque pièce est usinée numériquement puis finie à la main dans notre espace de Chavannes-Renens.</p>
         <div class="mono text-xs space-y-6">
           <div class="flex flex-col">
-            <span class="text-stone-500 italic mb-1">// ADRESSE PHYSIQUE</span>
+            <span class="text-stone-500 mb-1">// ADRESSE PHYSIQUE</span>
             <span class="text-sm">Avenue de la Gare 48<br>1022 Chavannes-Renens<br>Suisse</span>
           </div>
           <div class="flex flex-col">
-            <span class="text-stone-500 italic mb-1">// CONTACT DIRECT</span>
+            <span class="text-stone-500 mb-1">// CONTACT DIRECT</span>
             <span>hello@plystudio.ch</span>
           </div>
         </div>
@@ -116,17 +175,17 @@
         <form class="space-y-8">
           <div class="border-b border-black pb-2">
             <label class="mono text-[9px] uppercase font-bold text-stone-400 block mb-1">Nom / Prénom</label>
-            <input type="text" class="w-full py-2 focus:outline-none bg-transparent">
+            <input type="text" class="w-full py-2 focus:outline-none bg-transparent uppercase">
           </div>
           <div class="border-b border-black pb-2">
             <label class="mono text-[9px] uppercase font-bold text-stone-400 block mb-1">Email</label>
-            <input type="email" class="w-full py-2 focus:outline-none bg-transparent">
+            <input type="email" class="w-full py-2 focus:outline-none bg-transparent uppercase">
           </div>
           <div class="border-b border-black pb-2">
             <label class="mono text-[9px] uppercase font-bold text-stone-400 block mb-1">Message</label>
-            <textarea rows="3" class="w-full py-2 focus:outline-none bg-transparent"></textarea>
+            <textarea rows="3" class="w-full py-2 focus:outline-none bg-transparent uppercase"></textarea>
           </div>
-          <button class="w-full bg-black text-white px-12 py-5 text-xs font-black uppercase tracking-widest hover:bg-yellow-400 hover:text-black transition-all">Envoyer la demande</button>
+          <button class="w-full bg-black text-white px-12 py-5 text-xs font-black uppercase tracking-widest hover:bg-stone-800 transition-all">Envoyer la demande</button>
         </form>
       </div>
     </section>
