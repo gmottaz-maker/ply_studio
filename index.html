@@ -3,177 +3,141 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PLY_STUDIO | CNC Systems | Chavannes-Renens</title>
+  <title>PLY_STUDIO | Mobilier CNC | Chavannes-Renens</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
     .mono { font-family: 'JetBrains Mono', monospace; }
-    
-    /* Strictement aucune police italique */
-    * { font-style: normal !important; }
+    * { font-style: normal !important; } /* Suppression stricte de l'italique */
 
-    /* Couleurs d'accentuation industrielles */
-    .bg-tech-blue { bg-color: #0055FF; }
-    .bg-tech-yellow { bg-color: #FFD200; }
-    
-    .product-grid-item {
-      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-    }
-    
-    .product-grid-item:hover {
-      background-color: #fff;
-      transform: translateY(-4px);
-      box-shadow: 0 20px 40px rgba(0,0,0,0.1);
-    }
+    /* Animation d'apparition au défilement */
+    .fade-in { opacity: 0; transform: translateY(20px); transition: all 0.8s ease-out; }
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
   </style>
 </head>
-<body class="bg-[#F2F2F0] text-black">
+<body class="bg-white text-zinc-900">
 
-  <div class="w-full bg-black text-white py-2 px-6 flex justify-between items-center mono text-[9px] uppercase tracking-widest">
-    <span>Location: Chavannes-Renens // 46.5298 N 6.5744 E</span>
-    <span class="hidden md:inline">Precision: 0.2MM / Material: Birch Multi-Ply</span>
-    <span class="flex items-center gap-2"><span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span> Production Active</span>
-  </div>
-
-  <header class="sticky top-0 z-50 bg-[#F2F2F0]/90 backdrop-blur-md border-b border-black">
-    <div class="flex justify-between items-center px-6 py-6">
-      <div class="flex items-baseline gap-2">
-        <span class="font-black text-3xl tracking-tighter uppercase">Ply_Studio</span>
-        <span class="mono text-[10px] text-blue-600 font-bold">[CH_V.01]</span>
-      </div>
-      <nav class="hidden md:flex gap-10 text-[11px] font-black uppercase tracking-widest">
-        <a href="#collection" class="hover:text-blue-600 transition">Catalogue</a>
-        <a href="#atelier" class="hover:text-blue-600 transition">Atelier</a>
-        <a href="#contact" class="bg-black text-white px-4 py-2 hover:bg-blue-600 transition">Commander</a>
-      </nav>
-    </div>
+  <header class="fixed top-0 w-full z-50 mix-blend-difference py-8 px-10 flex justify-between items-center text-white">
+    <div class="font-black text-2xl tracking-tighter uppercase">Ply_Studio</div>
+    <nav class="hidden md:flex gap-12 text-[10px] font-bold uppercase tracking-[0.3em]">
+      <a href="#collection" class="hover:opacity-50 transition">Catalogue</a>
+      <a href="#atelier" class="hover:opacity-50 transition">Atelier</a>
+      <a href="#contact" class="hover:opacity-50 transition">Contact</a>
+    </nav>
   </header>
 
   <main>
-    <section class="grid grid-cols-1 lg:grid-cols-12 border-b border-black">
-      <div class="lg:col-span-7 p-8 md:p-20 bg-white flex flex-col justify-center border-r border-black relative overflow-hidden">
-        <div class="absolute top-0 left-0 w-2 h-full bg-[#FFD200]"></div>
-        
-        <div class="mono text-[11px] text-zinc-400 mb-6 uppercase tracking-[0.4em] font-bold">Model_Type: Flatpack_Furniture</div>
-        <h1 class="text-7xl md:text-[10rem] font-black uppercase leading-[0.8] tracking-tighter mb-10">
-          PLY<span class="text-blue-600">.</span><br>LAB
+    <section class="h-screen flex flex-col justify-center px-10 md:px-20 relative bg-[#f7f7f5]">
+      <div class="max-w-4xl">
+        <div class="mono text-[11px] text-blue-600 mb-6 font-bold uppercase tracking-widest">// Usinage Precision CNC / Chavannes-Renens</div>
+        <h1 class="text-7xl md:text-[12rem] font-black uppercase leading-[0.85] tracking-tighter mb-10">
+          Pure<br>Plywood.
         </h1>
-        <p class="max-w-md text-xl font-bold uppercase leading-tight mb-12">
-          Usinage haute performance en Suisse. Pas de quincaillerie. Juste de la friction et du design.
+        <p class="text-xl md:text-2xl font-medium max-w-xl leading-relaxed uppercase tracking-tight">
+          La rencontre entre l'ingénierie numérique et le design essentiel. Conçu et fabriqué localement.
         </p>
-        <div class="flex flex-wrap gap-4">
-          <a href="#collection" class="bg-black text-white px-10 py-5 text-xs font-black uppercase tracking-widest hover:bg-blue-600 transition-all">Consulter l'index</a>
-        </div>
       </div>
-      <div class="lg:col-span-5 bg-zinc-200 relative group">
-        <img src="https://images.unsplash.com/photo-1506332809400-85617279ae91?auto=format&fit=crop&q=80&w=1200" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-1000">
-        <div class="absolute inset-0 bg-blue-600/10 mix-blend-multiply"></div>
+      <div class="absolute bottom-10 right-10 mono text-[10px] text-zinc-400">
+        SCROLL TO EXPLORE_
       </div>
     </section>
 
-    <section id="collection" class="bg-white">
-      <div class="p-8 border-b border-black flex flex-col md:flex-row justify-between items-center bg-[#FFD200] gap-4">
-        <h2 class="text-4xl font-black uppercase tracking-tighter">Collection_2026_Index</h2>
-        <div class="mono text-[10px] bg-black text-white px-4 py-2 uppercase font-bold tracking-widest">9 Units_Validated</div>
+    <section id="collection" class="py-32 px-10 bg-white">
+      <div class="mb-32 flex flex-col md:flex-row justify-between items-baseline">
+        <h2 class="text-5xl font-black uppercase tracking-tighter">Collection_2026</h2>
+        <span class="mono text-xs text-zinc-400 font-bold uppercase">09 Pièces sélectionnées</span>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-32 gap-x-20">
         
         <script>
-          const items = [
-            {id: "S-01", name: "Stool_Minimal", price: "145", color: "border-blue-600", img: "https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?w=800"},
-            {id: "T-02", name: "Table_Basse_X", price: "320", color: "border-black", img: "https://images.unsplash.com/photo-1533090161767-e6ffed986c88?w=800"},
-            {id: "E-03", name: "Shelf_Module", price: "85", color: "border-red-600", img: "https://images.unsplash.com/photo-1594026112284-02bb6f3352fe?w=800"},
-            {id: "B-04", name: "Bench_System", price: "210", color: "border-black", img: "https://images.unsplash.com/photo-1581428982868-e410dd047a90?w=800"},
-            {id: "C-05", name: "Chair_Concept", price: "195", color: "border-blue-600", img: "https://images.unsplash.com/photo-1592078615290-033ee584e267?w=800"},
-            {id: "D-06", name: "Dining_Table", price: "580", color: "border-black", img: "https://images.unsplash.com/photo-1538688543411-857e4e87790b?w=800"},
-            {id: "W-07", name: "Work_Desk", price: "450", color: "border-black", img: "https://images.unsplash.com/photo-1503602642458-232111445657?w=800"},
-            {id: "M-08", name: "Magazine_Rack", price: "65", color: "border-red-600", img: "https://images.unsplash.com/photo-1544030109-47bbd524990f?w=800"},
-            {id: "C-09", name: "Console_09", price: "290", color: "border-blue-600", img: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800"}
+          const products = [
+            {name: "Tabouret_01", price: "145", img: "https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?w=800"},
+            {name: "Table_Basse_X", price: "320", img: "https://images.unsplash.com/photo-1533090161767-e6ffed986c88?w=800"},
+            {name: "Console_Entry", price: "290", img: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800"},
+            {name: "Shelf_Module", price: "85", img: "https://images.unsplash.com/photo-1594026112284-02bb6f3352fe?w=800"},
+            {name: "Bench_System", price: "210", img: "https://images.unsplash.com/photo-1581428982868-e410dd047a90?w=800"},
+            {name: "Chair_Ply", price: "195", img: "https://images.unsplash.com/photo-1592078615290-033ee584e267?w=800"},
+            {name: "Work_Desk", price: "450", img: "https://images.unsplash.com/photo-1503602642458-232111445657?w=800"},
+            {name: "Dining_Table", price: "580", img: "https://images.unsplash.com/photo-1538688543411-857e4e87790b?w=800"},
+            {name: "Magazine_Rack", price: "65", img: "https://images.unsplash.com/photo-1544030109-47bbd524990f?w=800"}
           ];
 
-          document.write(items.map((p, index) => `
-            <div class="product-grid-item border-b border-black md:border-r last:border-r-0 group cursor-pointer overflow-hidden">
-              <div class="p-4 border-b border-black flex justify-between items-center mono text-[9px] font-bold uppercase tracking-widest bg-[#F9F9F7]">
-                <span class="text-blue-600 font-black">// REF_${p.id}</span>
-                <span class="text-zinc-400">CNC_Unit_Available</span>
+          document.write(products.map(p => `
+            <div class="fade-in group cursor-pointer">
+              <div class="aspect-[4/5] overflow-hidden bg-[#f7f7f5] mb-8 transition-all duration-500 group-hover:shadow-2xl">
+                <img src="${p.img}" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700">
               </div>
-              <div class="aspect-square relative overflow-hidden flex items-center justify-center p-12">
-                <img src="${p.img}" class="w-full h-full object-cover transition-all duration-700 group-hover:scale-110">
-                <div class="absolute inset-0 bg-blue-600 opacity-0 group-hover:opacity-10 transition-opacity"></div>
-              </div>
-              <div class="p-6 border-t border-black flex justify-between items-end bg-white">
+              <div class="flex justify-between items-baseline">
                 <div>
-                  <h3 class="font-black uppercase text-sm tracking-tighter">${p.name}</h3>
-                  <div class="flex gap-2 mt-2">
-                    <div class="w-3 h-3 bg-stone-300"></div>
-                    <div class="w-3 h-3 bg-zinc-800"></div>
-                  </div>
+                  <h3 class="font-black uppercase text-lg tracking-tighter">${p.name}</h3>
+                  <p class="mono text-[10px] text-zinc-400 uppercase mt-1 tracking-widest">Birch_Ply_18mm</p>
                 </div>
-                <div class="text-right">
-                  <span class="font-black text-xl italic-none">${p.price} CHF</span>
-                </div>
+                <span class="font-bold text-lg">${p.price} CHF</span>
               </div>
             </div>
           `).join(''));
         </script>
+
       </div>
     </section>
 
-    <section id="atelier" class="grid grid-cols-1 md:grid-cols-2 border-b border-black">
-      <div class="p-8 md:p-20 bg-black text-white relative">
-        <div class="absolute top-0 right-0 w-32 h-32 bg-blue-600/20 pointer-events-none"></div>
-        <h2 class="text-5xl font-black uppercase tracking-tighter mb-12">Local_Atelier</h2>
-        <p class="text-xl font-bold uppercase leading-tight mb-20 opacity-90 max-w-sm">
-          Basé à Chavannes-Renens, nous marions technologie numérique et savoir-faire vaudois.
-        </p>
-        <div class="grid grid-cols-1 gap-12 mono text-[11px] uppercase tracking-[0.3em]">
-          <div>
-            <span class="text-blue-600 block mb-4 font-black">01_SITE_LOCATION</span>
-            <address class="not-italic leading-relaxed text-zinc-400">
-              Avenue de la Gare 48<br>1022 Chavannes-Renens<br>Suisse
-            </address>
-          </div>
-          <div>
-            <span class="text-blue-600 block mb-4 font-black">02_NETWORK</span>
-            <a href="mailto:hello@plystudio.ch" class="hover:text-blue-600 block transition">hello@plystudio.ch</a>
-            <a href="#" class="hover:text-blue-600 block transition mt-2">@ply_studio_cnc</a>
+    <section id="atelier" class="py-32 px-10 bg-[#0a0a0a] text-white overflow-hidden">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-20">
+        <div class="reveal">
+          <h2 class="text-6xl font-black uppercase tracking-tighter mb-10">L'Atelier_</h2>
+          <p class="text-2xl font-light uppercase leading-snug opacity-80 max-w-lg mb-20">
+            Nous transformons le bois brut en systèmes de mobilier intelligents par fraisage numérique de haute précision.
+          </p>
+          <div class="mono text-[11px] space-y-8 uppercase tracking-widest">
+            <div>
+              <span class="text-blue-600 block mb-2 font-black">LOCALISATION</span>
+              <p>Av. de la Gare 48, 1022 Chavannes-Renens, Suisse</p>
+            </div>
+            <div>
+              <span class="text-blue-600 block mb-2 font-black">SERVICES</span>
+              <p>Usinage CNC / Design sur mesure / Prototypage</p>
+            </div>
           </div>
         </div>
+        <div class="relative h-[600px] bg-zinc-900 overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1611269154421-4e27233ac5c7?auto=format&fit=crop&q=80&w=1200" class="w-full h-full object-cover opacity-50">
+        </div>
       </div>
+    </section>
 
-      <div id="contact" class="p-8 md:p-20 bg-white">
-        <h2 class="text-5xl font-black uppercase tracking-tighter mb-12">Commander_</h2>
-        <form class="space-y-12">
-          <div class="border-b-2 border-black pb-4">
-            <label class="mono text-[10px] text-zinc-400 uppercase block mb-2 font-bold tracking-widest">Full_Name</label>
-            <input type="text" class="w-full bg-transparent focus:outline-none font-bold uppercase text-lg">
-          </div>
-          <div class="border-b-2 border-black pb-4">
-            <label class="mono text-[10px] text-zinc-400 uppercase block mb-2 font-bold tracking-widest">Email_Address</label>
-            <input type="email" class="w-full bg-transparent focus:outline-none font-bold uppercase text-lg">
-          </div>
-          <div class="border-b-2 border-black pb-4">
-            <label class="mono text-[10px] text-zinc-400 uppercase block mb-2 font-bold tracking-widest">Project_Brief</label>
-            <textarea rows="2" class="w-full bg-transparent focus:outline-none font-bold uppercase text-lg"></textarea>
-          </div>
-          <button class="bg-blue-600 text-white w-full py-6 font-black uppercase text-xs tracking-[0.4em] hover:bg-black transition-all">Envoyer la demande</button>
+    <section id="contact" class="py-32 px-10 bg-white flex justify-center">
+      <div class="w-full max-w-3xl">
+        <h2 class="text-5xl font-black uppercase tracking-tighter mb-20 text-center">Commencer_un_Projet</h2>
+        <form class="space-y-16">
+          <input type="text" placeholder="NOM_COMPLET" class="w-full border-b border-zinc-200 py-4 focus:outline-none focus:border-black uppercase font-bold text-sm tracking-widest">
+          <input type="email" placeholder="EMAIL_CONTACT" class="w-full border-b border-zinc-200 py-4 focus:outline-none focus:border-black uppercase font-bold text-sm tracking-widest">
+          <textarea rows="4" placeholder="VOTRE_MESSAGE" class="w-full border-b border-zinc-200 py-4 focus:outline-none focus:border-black uppercase font-bold text-sm tracking-widest"></textarea>
+          <button class="bg-black text-white px-12 py-6 font-black uppercase text-xs tracking-[0.4em] hover:bg-blue-600 transition-all w-full">Envoyer la demande</button>
         </form>
       </div>
     </section>
   </main>
 
-  <footer class="p-10 flex flex-col md:flex-row justify-between items-center gap-6 mono text-[10px] uppercase font-bold">
-    <div class="flex items-center gap-4">
-      <span class="bg-black text-white px-2 py-1 tracking-tighter">PLY_STUDIO // 2026</span>
-      <span class="text-zinc-400">Made in Switzerland</span>
-    </div>
-    <div class="flex gap-10">
-      <a href="#" class="hover:text-blue-600">Privacy_Policy</a>
-      <a href="#" class="hover:text-blue-600">Terms_Of_Service</a>
+  <footer class="p-10 border-t border-zinc-100 flex justify-between items-center mono text-[10px] uppercase font-bold text-zinc-400">
+    <div>© 2026 PLY_STUDIO // CHAVANNES-RENENS</div>
+    <div class="hidden md:flex gap-10">
+      <a href="#" class="hover:text-black transition">Instagram</a>
+      <a href="#" class="hover:text-black transition">Shop_Policy</a>
     </div>
   </footer>
+
+  <script>
+    // Petit script pour l'animation au scroll
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  </script>
 
 </body>
 </html>
